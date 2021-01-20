@@ -1,0 +1,30 @@
+@mixin setTextOne($size,$color,$weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    font-family: "Fredericka the Great";
+}
+
+@mixin setTextTwo($size,$color,$weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    font-family: "Montserrat";
+}
+
+@mixin setFlex($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin tranForm($x,$y) {
+    transform: translate($x,$y);
+    top: -$y;
+    left: -$x;
+}
+
+@mixin  setHover {
+    transform: translate(0,-15px);
+    transition: .3s;
+}

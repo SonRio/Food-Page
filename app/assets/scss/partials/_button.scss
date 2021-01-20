@@ -1,0 +1,12 @@
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: .3s;
+
+    &:hover{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: .3s;
+    }
+}

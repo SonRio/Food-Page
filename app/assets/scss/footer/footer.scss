@@ -1,0 +1,95 @@
+footer {
+    background-image: url('../../assets/images/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+
+    .footer {
+        padding-top: 65px;
+        padding-bottom: 25px;
+        padding-left: 45px;
+        width: 100%;
+        margin: auto;
+
+        .row {
+            width: 100%;
+            margin: 0 auto;
+            @include setFlex(space-between,center);
+        }
+
+        .row_two {
+            transform: translate(0, 50px);
+            padding-bottom: 100px;
+
+            &_text {
+                width: 535px;
+            }
+
+             p {
+                font-size: 17px;
+                line-height: 25px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Montserrat";
+             }
+
+             .location {
+                width: 535px;
+                @include setFlex(space-between,center);
+                flex-direction: column;
+                padding-top: 10px;
+
+                &_row {
+                    @include setFlex(flex-start,center);
+                    width: 430px;
+                    width: 500px;
+                    padding-left: 37px;
+                    margin-bottom: 4px;
+                    margin-top: -7px;
+                    p{
+                        margin-left: 32px;
+                        margin-bottom: 30px;
+                    }
+                    a {
+                        margin-left: 32px;
+                        font-size: 17px;
+                        line-height: 38px;
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-family: "Montserrat";
+                    }
+                    
+                }
+                &_row:nth-child(1) {
+                    transform: translate(0,9px);
+                }
+             }
+        }
+
+        .row_three {
+            @include setFlex(space-between,center);
+            padding-bottom: 50px;
+            padding-top: 77px;
+            padding-right: 62px;
+            &_text {
+                width: 380px;
+                p {
+                    font-size: 17px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-family: "Montserrat";
+                }
+            }
+
+            &_icon {
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: -30px;
+            }
+        }
+    }
+
+}

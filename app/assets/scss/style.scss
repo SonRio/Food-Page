@@ -1,0 +1,19 @@
+@import './reset.scss';
+@import './partials/button';
+@import './partials/color';
+@import './partials/section';
+@import './partials/font';
+@import './partials/mixins';
+
+@import './header/header.scss';
+@import './header/banner.scss';
+
+
+@import './main/enjoy.scss';
+@import './main/discover.scss';
+@import './main/popular.scss';
+@import './main/form.scss';
+
+@import './footer/footer.scss';
+
+@import './zReponsive.scss';

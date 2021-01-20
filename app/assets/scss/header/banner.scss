@@ -1,0 +1,97 @@
+.banner {
+    @include setFlex(space-evenly,center);
+    position: relative;
+    &_left {
+        width: 570px;
+        @include setFlex(center,center);
+        flex-direction: column;
+        transform: translate(-8px, 0px);
+        .blog_one {
+            height: 240px;
+            width: 570px;
+            transform: translate(-22px, -80px);
+            @include setFlex(space-between,center);
+            flex-direction: column;
+            width: 100%;
+            h2 {
+                font-size: 58px;
+                color: #000000;
+                font-family: "Gabelisa";
+                margin: 0;
+            }
+            h1 {
+                margin: 0;
+                @include setTextOne(90px,#000000,400);
+            }
+
+            h3 {
+                margin: 0;
+                @include setTextTwo(27px,#000000,700);
+            }
+        }
+
+        .blog_two {
+            @include setFlex(center,center);
+            flex-direction: column;
+            &_row_one {
+                width: 300px;
+                height: 64px;
+                transform: translate(-30px, -15px);
+                @include setFlex(center,center);
+
+                h3 {
+                    @include setTextOne(19px,#000000,400);
+                }
+
+                h2 {
+                    @include setTextOne(57px,#000000,400);
+                    transform: translate(10px, 0);
+                }
+
+                
+            }
+
+            &_row_two {
+                transform: translate(-30px, 50px);
+                margin-top: -40px; 
+                button {
+                    width: 227px;
+                    height: 58px;
+                    background-color: $color_main;
+                    border: 1px solid #000000;
+
+                    font-size: 21px;
+                    color: #000000;
+                    font-weight: 800;
+                    font-family: "Montserrat";
+                }
+            }
+           
+        }
+    }
+
+    &_right {
+        transform: translate(-5px, 0px);
+        .img {
+            width: 570px;
+            img {
+                width: 100%;
+                filter: drop-shadow(5.5px 9.526px 125px rgba(12,13,12,0.31));
+                transform: translate(-20px, 50px);
+            }
+            
+        }
+    }
+}
+
+.flower {
+    width: 240px;
+    position: relative;
+    left: 0;
+    bottom: 180px;
+    left: 0;
+
+    img {
+        width: 100%;
+    }
+}

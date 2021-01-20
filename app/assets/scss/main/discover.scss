@@ -1,0 +1,320 @@
+.discover {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+    .container {
+        max-width: 1440px;
+    }
+    &_title {
+        margin: 0 auto;
+        text-align: center;
+        width: 1035px;
+
+        h4 {
+            font-size: 21px;
+            letter-spacing: 1px;
+            line-height: 46px;
+            color: #000000;
+            font-weight: 700;
+            font-family: "Montserrat";
+            margin: 0;
+            transform: translate(0px, -2px);
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 46px;
+            color: #000000;
+            font-weight: 400;
+            font-family: "Fredericka the Great";
+            margin-top: 0;
+            transform: translate(0px, -10px);
+        }
+        p {
+            width: 1035px;
+            // height: 60px;
+            font-size: 17px;
+            line-height: 25px;
+            color: #000000;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+            margin: 0;
+            transform: translate(0px, -20px);
+        }
+    }
+
+    &_slider {
+        height: 427px;
+        @include setFlex(center, center);
+        position: relative;
+        margin-top: 10px;
+
+
+        .slider_one {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            width: 404px;
+            height: 351px;
+            top: 9%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .slider_two {
+            position: relative;
+            z-index: 2;
+            width: 696px;
+            height: 403px;
+            transform: translate(1%, -1%);
+            img {
+                height: 100%;
+                width: 100%;
+                filter: drop-shadow(9.5px 16.454px 27px rgba(12, 13, 12, 0.67));
+            }
+        }
+
+        .slider_three {
+            top: 9%;
+            z-index: 1;
+            position: absolute;
+            right: 0;
+            width: 404px;
+            height: 351px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &_icon {
+        position: relative;
+        width: 70px;
+        margin: 41px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translate(0px, -8px);
+        a {
+            width: 17px;
+            height: 17px;
+            border-radius: 8px;
+            background-color: #dcdcdc;
+        }
+
+        .active {
+            background-color: #ffe001;
+        }
+    }
+}
+
+// CSS for SLIDER
+
+#wrap {
+    width: 100%;
+    margin-top: 38px;
+    position: relative;
+}
+.carousel-wrap {
+   width: 696px;
+   height: 403px;
+    margin: 0 auto;
+    position: relative;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-wrap {
+        width: 400px;
+   }
+}
+@media (max-width: 767px) {
+    .carousel-wrap {
+        width: 388px;
+        height: 345px;
+   }
+}
+@media (max-width: 480px) {
+    .carousel-wrap {
+        width: 267px;
+        height: 408px;
+   }
+}
+.carousel > li {
+   width: 404px;
+   height: 351px;
+    background: #fff;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel > li {
+        width: 400px;
+   }
+}
+@media (max-width: 767px) {
+    .carousel > li {
+        width: 350px;
+        height: 345px;
+   }
+}
+@media (max-width: 480px) {
+    .carousel > li {
+        width: 240px;
+        height: 408px;
+   }
+}
+.items {
+    position: absolute;
+}
+.main-pos {
+    position: absolute;
+    left: 4.5%;
+    z-index: 3000;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-pos {
+        margin-left: -40px !important;
+   }
+}
+@media (max-width: 767px) {
+    .main-pos {
+        margin-left: -40px !important;
+   }
+}
+
+.left-pos {
+    background: #ccc;
+    opacity: 0.5;
+    position: absolute;
+    left: -51%;
+    z-index: 1000;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    animation-name: leftK;
+    animation-duration: .2s;
+}
+@keyframes leftK {
+    0% {
+        left: -42%;
+    }
+    
+    100% {
+        left: -51%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .left-pos {
+        margin-left: -220px !important;
+   }
+}
+@media (max-width: 767px) {
+    .left-pos {
+        margin-left: -113px !important;
+   }
+}
+@media (max-width: 480px) {
+    .left-pos {
+        margin-left: -145px !important;
+   }
+}
+
+.right-pos {
+    opacity: 0.5;
+    z-index: 1000;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    position: absolute;
+    right: -59%;
+    animation-name: rightK;
+    animation-duration: .2s;
+}
+@keyframes rightK {
+    0% {
+        right: -50%;
+    }
+    100% {
+        right: -59%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .right-pos {
+        margin-left: 140px !important;
+   }
+}
+@media (max-width: 767px) {
+    .right-pos {
+        margin-left: 30px !important;
+   }
+}
+@media (max-width: 480px) {
+    .right-pos {
+        margin-left: 62px !important;
+   }
+}
+.slider {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .slider #prev {
+        left: -180px;
+   }
+}
+@media (max-width: 767px) {
+    .slider #prev {
+        left: -70px;
+   }
+}
+.slider #next {
+    right: -214px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .slider #next {
+        right: -180px;
+   }
+}
+@media (max-width: 767px) {
+    .slider #next {
+        right: -70px;
+   }
+}
+@media (max-width: 480px) {
+    .slider {
+        display: none;
+   }
+}
+
+.items img {
+ width: 100%;
+ height: 100%;
+}
+
+.right-pos img {
+    transform: scaleX(1.2) scaleY(1.35) translate(-24px, 10px);
+}
+.left-pos img {
+    transform: scaleX(1.2) scaleY(1.35) translate(-41px, 10px);
+}
+
+.main-pos img {
+    transform: scaleX(1.75) scaleY(1.16) translate(65px, 6px);
+
+}

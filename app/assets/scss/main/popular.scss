@@ -1,0 +1,109 @@
+.popular {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 55px;
+    height: 443px;
+
+    &_one {
+        width: 598px;
+        position: relative;
+        .img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text {
+            position: absolute;
+            padding-left: 38px;
+            padding-top: 10px;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 44px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            transform: translate(0px, -22px);
+            width: 63%;
+        }
+        
+    }
+
+    .parent_two {
+        @include setFlex(space-between,center);
+        flex-direction: column;
+        padding-left: 38px;
+        width: 640px;
+        .popular_two {
+            width:100%;
+            height: 195px;
+            .img {
+                width: 598px;
+                position: absolute;
+                img {
+                    width: 100%;
+                    height: 191px;
+                }
+
+            }
+            .text {
+                position: absolute;
+                padding-left: 30px;
+                padding-top: 0px;
+                width: 300px;
+            }
+    
+            h1 {
+                font-size: 33px;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Montserrat";
+                transform: translate(0px, -29px);
+            }
+        }
+    
+        .popular_three {
+            width:100%;
+            height: 195px;
+
+            .img {
+                width: 598px;
+                position: absolute;
+                img {
+                    width: 100%;
+                    height: 191px;
+                }
+            }
+            .text {
+                position: absolute;
+                padding-left: 30px;
+                padding-top: 0px;
+                width: 300px;
+            }
+    
+            h1 {
+                font-size: 33px;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Montserrat";
+                transform: translate(0px, -29px);
+            }
+        }
+    }
+
+    
+    h2 {
+        font-size: 25px;
+        line-height: 38px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Montserrat";
+    }
+    
+}
